@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/57c397ab-a8e5-4bf5-911e-bcfed93ee989
+View your app in  Studio: https://ai.figma/apps/57c397ab-a8e5-4bf5-911e-bcfed93ee989
 
 ## Run Locally
 
