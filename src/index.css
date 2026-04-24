@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Plus Jakarta Sans", var(--font-sans);
+  
+  --color-primary: #361f1a;
+  --color-primary-container: #4e342e;
+  --color-on-primary-container: #c19c94;
+  --color-secondary: #6f5a52;
+  --color-background: #f9f9f8;
+  --color-surface: #f9f9f8;
+  --color-surface-container: #eeeeed;
+  --color-surface-container-low: #f4f4f3;
+  --color-surface-container-high: #e8e8e7;
+  --color-outline: #827471;
+  --color-on-surface: #1a1c1c;
+  --color-on-surface-variant: #504442;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans selection:bg-primary selection:text-white;
+  }
+}
+
+.text-grain {
+  position: relative;
+}
+
+.text-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDZCjypa-DkHUlWCeMDkpFqqJMOYWHlIn53lpDiAGfEwXbIVQO9NUv434cFvd7HM6AhhWk3zzSemFhFNv-uQ1GnL7nG2gdPmOvqQValoVGnI5s0OJ_N65KDKxZlVjTaSCFmhSeylJF9dj-2MIc4WFVY8YKLVatteqgTWfXa21E3ciM26uZdydgBQVOaQ14ShybrntpGUvk_B79soE-sg0jMMmjR64ZaXdgTq7osPkSiYEBVhTf5-bSquN1m49gbHelZnk7WQWQb4fE);
+}
